@@ -7,17 +7,7 @@
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
 		
-		document.getElementById("b1").onclick = function() {console.log("1")};
-		document.getElementById("b2").onclick = function() {myFunction(2)};
-		document.getElementById("b3").onclick = function() {myFunction(3)};
-		document.getElementById("b4").onclick = function() {myFunction(4)};
-		document.getElementById("b5").onclick = function() {myFunction(5)};
-		document.getElementById("b6").onclick = function() {myFunction(6)};
-		document.getElementById("b7").onclick = function() {myFunction(7)};
-		document.getElementById("b8").onclick = function() {myFunction(8)};
-		document.getElementById("b9").onclick = function() {myFunction(9)};
-		document.getElementById("b10").onclick = function() {myFunction(10)};
-		document.getElementById("b11").onclick = function() {myFunction(11)};
+		
 					    
 function myFunction(val) {
 	    var pT=1
@@ -48,12 +38,12 @@ function myFunction(val) {
 			p = 3
 		}
          
-        return onClick(pT,l,b,p)
+        return onset(pT,l,b,p);
 
 
 		}
 
-		function onClick(PT,L,B,P){
+		function onset(PT,L,B,P){
                  var model = 1
 			if(P == 1){
 				if(PT == 1){
@@ -230,18 +220,18 @@ function myFunction(val) {
 	<model-viewer alt="Couch Model" id="model" src= Models/m1.glb camera-controls></model-viewer>
 	
 	<div class="b">
-	<button id="b1">pT1</button>
+	<button onclick="myFunction(1)">pT1</button>
 	
-    <button id="b2">pT2</button><br/>
-    <button id="b3">l1</button>
-    <button id="b4">l2</button>
-    <button id="b5">l3</button><br/>
-    <button id="b6">b1</button>
-    <button id="b7">b2</button>
-    <button id="b8">b3</button><br/>
-    <button id="b9">p1</button>
-    <button id="b10">p2</button>
-    <button id="b11">p3</button>
+   <button onclick="myFunction(2)">pT2</button><br/>
+    <button onclick="myFunction(3)">l1</button>
+    <button onclick="myFunction(4)">l2</button>
+    <button onclick="myFunction(5)">l3</button><br/>
+    <button onclick="myFunction(6)">b1</button>
+    <button onclick="myFunction(7)">b2</button>
+    <button onclick="myFunction(8)">b3</button><br/>
+    <button onclick="myFunction(9)">p1</button>
+    <button onclick="myFunction(10)">p2</button>
+    <button onclick="myFunction(11)">p3</button>
     </div>
     
 
