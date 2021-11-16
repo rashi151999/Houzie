@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Houzie</title>
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+		
+		function myFunction(val) {
+	    var pT=1
+		var l=1
+		var b=1
+		var p=1
+		if(val==pT1){
+			pT = 1
+		} else if(val == pT2){
+			pT = 2
+		} else if(val == l1){
+			l = 1
+		} else if(val == l2){
+			l = 2
+		} else if(val == l3){
+			l = 3
+		} else if(val == b1){
+			b = 1
+		} else if(val == b2){
+			b =2
+		} else if(val == b3){
+			b = 3
+		} else if(val == p1){
+			p = 1
+		} else if(val == p2){
+			p = 2
+		} else if(val == p3){
+			p = 3
+		}
+         
+        return onClick(pT,l,b,p)
+
+
+		}
+
+		function onClick(PT,L,B,P){
+
+			if(P == 1){
+				if(PT == 1){
+					if(B == 1){
+						if(L == 1){
+							model = 1
+						} else if(L == 2){
+							model = 2
+						} else if(L == 3){
+							model = 3
+						}
+					} else if(B == 2){
+						if(L == 1){
+							model = 4
+						} else if(L == 2){
+							model = 5
+						} else if(L == 3){
+							model = 6
+						}
+					} else if(B == 3){
+						if(L == 1){
+							model = 7
+						} else if(L == 2){
+							model = 8
+						} else if(L == 3){
+							model = 9
+						}
+					} else if(PT == 2){
+					if(B == 1){
+						if(L == 1){
+							model = 10
+						} else if(L == 2){
+							model = 11
+						} else if(L == 3){
+							model = 12
+						}
+					} else if(B == 2){
+						if(L == 1){
+							model = 13
+						} else if(L == 2){
+							model = 14
+						} else if(L == 3){
+							model = 15
+						}
+					} else if(B == 3){
+						if(L == 1){
+							model = 16
+						} else if(L == 2){
+							model = 17
+						} else if(L == 3){
+							model = 18
+						}
+					} 
+				} 
+
+			} else if(P == 2){
+				if(PT == 1){
+					if(B == 1){
+						if(L == 1){
+							model = 19
+						} else if(L == 2){
+							model = 20
+						} else if(L == 3){
+							model = 21
+						}
+					} else if(B == 2){
+						if(L == 1){
+							model = 22
+						} else if(L == 2){
+							model = 23
+						} else if(L == 3){
+							model = 24
+						}
+					} else if(B == 3){
+						if(L == 1){
+							model = 25
+						} else if(L == 2){
+							model = 26
+						} else if(L == 3){
+							model = 27
+						}
+					} else if(PT == 2){
+					if(B == 1){
+						if(L == 1){
+							model = 28
+						} else if(L == 2){
+							model = 29
+						} else if(L == 3){
+							model = 30
+						}
+					} else if(B == 2){
+						if(L == 1){
+							model = 31
+						} else if(L == 2){
+							model = 32
+						} else if(L == 3){
+							model = 33
+						}
+					} else if(B == 3){
+						if(L == 1){
+							model = 34
+						} else if(L == 2){
+							model = 35
+						} else if(L == 3){
+							model = 36
+						}
+					} 
+				} 
+
+
+			} else if(P == 3){
+               if(PT == 1){
+					if(B == 1){
+						if(L == 1){
+							model = 37
+						} else if(L == 2){
+							model = 38
+						} else if(L == 3){
+							model = 39
+						}
+					} else if(B == 2){
+						if(L == 1){
+							model = 40
+						} else if(L == 2){
+							model = 41
+						} else if(L == 3){
+							model = 42
+						}
+					} else if(B == 3){
+						if(L == 1){
+							model = 43
+						} else if(L == 2){
+							model = 44
+						} else if(L == 3){
+							model = 45
+						}
+					} else if(PT == 2){
+					if(B == 1){
+						if(L == 1){
+							model = 46
+						} else if(L == 2){
+							model = 47
+						} else if(L == 3){
+							model = 48
+						}
+					} else if(B == 2){
+						if(L == 1){
+							model = 49
+						} else if(L == 2){
+							model = 50
+						} else if(L == 3){
+							model = 51
+						}
+					} else if(B == 3){
+						if(L == 1){
+							model = 52
+						} else if(L == 2){
+							model = 53
+						} else if(L == 3){
+							model = 54
+						}
+					} 
+				} 
+
+			}
+			return model
+		}
+
+	</script>
+</head>
+<body>
+	<model-viewer alt="Couch Model" src="Models/m" + model + ".glb" ar ar-modes="webxr scene-viewer quick-look"  camera-controls></model-viewer>
+	<button class="b b1">pT1</button>
+    <button class="b b2">pT2</button><br/>
+    <button class="b b3">l1</button>
+    <button class="b b4">l2</button>
+    <button class="b b5">l3</button><br/>
+    <button class="b b6">b1</button>
+    <button class="b b7">b2</button>
+    <button class="b b8">b3</button><br/>
+    <button class="b b9">p1</button>
+    <button class="b b10">p2</button>
+    <button class="b b11">p3</button>
+     
+    <button onclick="myFunction(p1)">pTT1</button>
+    <button onclick="myFunction(p2)">p2</button>
+    <button onclick="myFunction(l1)">l1</button>
+    <button onclick="myFunction(l2)">l2</button>
+    <button onclick="myFunction(l3)">l3</button>
+    <button onclick="myFunction(b1)">b1</button>
+    <button onclick="myFunction(b2)">b2</button>
+    <button onclick="myFunction(b3)">b3</button>
+    <button onclick="myFunction(p1)">p1</button>
+    <button onclick="myFunction(p2)">p2</button>
+    <button onclick="myFunction(p3)">p3</button>
+
+</body>
+
+
+</html>
