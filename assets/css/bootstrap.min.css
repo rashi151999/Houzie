@@ -9449,6 +9449,13 @@ vertical-align: middle;
   margin: 4px 2px;
   cursor: pointer;
 }
+#items-center {
+    height: 500px;
+    width: 700px;
+    position: absolute;
+    left: 12%;
+    top: calc(50% - 250px);
+}
 
 .b1 {background-color: #4CAF50;} /* Green */
 .b2 {background-color: #008CBA;} /* Blue */
