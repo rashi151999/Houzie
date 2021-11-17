@@ -9501,10 +9501,11 @@ vertical-align: middle;
 #logo model-viewer {
    height: 600px;
     width: 600px;
-    position: absolute;
+    position: center;
     top: 0;
     left: 0;
-    border: none;
+    margin-left: auto;
+  margin-right: auto;
 }
 
 
