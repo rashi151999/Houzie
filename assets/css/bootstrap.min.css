@@ -9484,6 +9484,24 @@ vertical-align: middle;
 .parent{
   position: relative;
 }
+#logo_container {
+    display:table;
+    height:100px;
+    width:100px;
+    margin:0 auto;   
+    text-align:center;
+    border:1px solid #333;
+}
+
+#logo {
+    display:table-cell;
+    vertical-align:middle;
+
+}
+#logo img {
+    max-height:80%;
+    max-width:80%;
+}
 
 .b1 {background-color: #4CAF50;} /* Green */
 .b2 {background-color: #008CBA;} /* Blue */
