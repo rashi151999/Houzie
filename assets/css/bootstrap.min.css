@@ -9450,20 +9450,7 @@ vertical-align: middle;
   cursor: pointer;
 }
 
-.items-center model-viewer {
-    height: 500px;
-    width: 500px;
-    position: center;
-    top: 0;
-    left: 0;
-    border: none;
-  left-padding: 50%;
-  right-padding: 50%;
-  margin-left: auto;
 
-
-margin-right: auto;
-}
 
 .b1 {background-color: #4CAF50;} /* Green */
 .b2 {background-color: #008CBA;} /* Blue */
