@@ -9422,6 +9422,16 @@ fieldset:disabled .btn {
     display: none !important;
   }
 }
+.header-image {
+border: 5px solid #FFFF00;
+line-height: 150px;
+height: 150px;
+}
+.header-image p {
+display: inline-block;
+line-height: normal;
+vertical-align: middle;
+}
 .b {
   border: none;
   color: white;
