@@ -9499,8 +9499,8 @@ vertical-align: middle;
 
 }
 #logo model-viewer {
-    max-height:80%;
-    max-width:80%;
+    max-height:200%;
+    max-width:200%;
 }
 
 .b1 {background-color: #4CAF50;} /* Green */
