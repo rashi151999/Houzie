@@ -9453,7 +9453,7 @@ vertical-align: middle;
 .items-center model-viewer {
     height: 500px;
     width: 500px;
-    position: absolute;
+    position: center;
     top: 0;
     left: 0;
     border: none;
