@@ -9422,12 +9422,12 @@ fieldset:disabled .btn {
     display: none !important;
   }
 }
-.header-image {
+.col-lg-6 col-md-12 col-12 {
 border: 5px solid #FFFF00;
 line-height: 150px;
 height: 150px;
 }
-.header-image p {
+.col-lg-6 col-md-12 col-12 p {
 display: inline-block;
 line-height: normal;
 vertical-align: middle;
