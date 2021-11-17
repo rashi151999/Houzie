@@ -9450,7 +9450,7 @@ vertical-align: middle;
   cursor: pointer;
 }
 
-#items-center {
+.items-center {
     height: 600px;
     width: 600px;
     position: absolute;
@@ -9459,7 +9459,7 @@ vertical-align: middle;
 }
 
 /* This styles the 3D object inserted in the aside container */
-#items-center model-viewer {
+.items-center model-viewer {
     height: 600px;
     width: 600px;
     position: absolute;
