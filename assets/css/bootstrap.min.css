@@ -9449,13 +9449,7 @@ vertical-align: middle;
   margin: 4px 2px;
   cursor: pointer;
 }
-.items-center {
-    height: 600px;
-    width: 600px;
-    position: absolute;
-    top: calc(50% - 250px);
-    right: 7%;
-}
+
 .items-center model-viewer {
     height: 500px;
     width: 500px;
@@ -9465,6 +9459,10 @@ vertical-align: middle;
     border: none;
   left-padding: 50%;
   right-padding: 50%;
+  margin-left: auto;
+
+
+margin-right: auto;
 }
 
 .b1 {background-color: #4CAF50;} /* Green */
