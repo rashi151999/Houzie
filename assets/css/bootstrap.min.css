@@ -9450,11 +9450,19 @@ vertical-align: middle;
   cursor: pointer;
 }
 #items-center {
-    height: 500px;
-    width: 700px;
+    height: 600px;
+    width: 600px;
     position: absolute;
-    left: 12%;
     top: calc(50% - 250px);
+    right: 7%;
+}
+#items-center model-viewer {
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
 }
 
 .b1 {background-color: #4CAF50;} /* Green */
