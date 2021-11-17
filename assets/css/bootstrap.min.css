@@ -9432,6 +9432,12 @@ display: inline-block;
 line-height: normal;
 vertical-align: middle;
 }
+.header-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 .b {
   border: none;
   color: white;
