@@ -9451,8 +9451,8 @@ vertical-align: middle;
 }
 
 .items-center model-viewer {
-    height: 600px;
-    width: 600px;
+    height: 500px;
+    width: 500px;
     position: absolute;
     top: 0;
     left: 0;
