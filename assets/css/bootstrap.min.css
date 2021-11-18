@@ -9502,9 +9502,9 @@ vertical-align: middle;
 
 }
 #logo model-viewer {
-   height: 600px;
-    width: 600px;
-    position: absolute;
+   height: 400px;
+    width: 400px;
+    position: center;
     top: 0;
     left: 0;
     margin-left: auto;
