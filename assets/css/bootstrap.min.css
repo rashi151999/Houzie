@@ -9497,7 +9497,7 @@ vertical-align: middle;
     height: 600px;
     width: 600px;
     position: absolute;
-    top: calc(50% - 250px);
+   
     right: 7%;
 
 }
@@ -9509,7 +9509,7 @@ vertical-align: middle;
     left: 0;
     margin-left: auto;
   margin-right: auto;
-  top-padding:30%;
+  
 }
 
 
