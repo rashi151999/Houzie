@@ -9514,7 +9514,7 @@ vertical-align: middle;
     height: auto;
   
 }
-.responsive-center {
+#model {
   height: 200%;
   width: 200%;
 }
