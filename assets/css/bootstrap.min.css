@@ -9448,6 +9448,9 @@ vertical-align: middle;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  height:200px;
+  width:200px;
+  border-radius: 4px;
 }
 
 .items-center {
@@ -9499,7 +9502,6 @@ vertical-align: middle;
     position: absolute;
    
     right: 7%;
-   padding-left: 800px;
 
 }
 #logo model-viewer {
@@ -9512,7 +9514,6 @@ vertical-align: middle;
   margin-right: auto;
   min-width: 100%;
     height: auto;
- 
   
 }
 
