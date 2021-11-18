@@ -9514,7 +9514,10 @@ vertical-align: middle;
     height: auto;
   
 }
-
+.responsive-center {
+  height: 200%;
+  width: 200%;
+}
 
 .b1 {background-color: #4CAF50; border-radius: 4px; height:70px; width:70px;} /* Green */
 .b2 {background-color: #008CBA; border-radius: 4px; height:70px; width:70px;} /* Blue */
