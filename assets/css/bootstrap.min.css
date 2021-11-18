@@ -9494,8 +9494,11 @@ vertical-align: middle;
 }
 
 #logo {
-    display:table-cell;
-    vertical-align:middle;
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    top: calc(50% - 250px);
+    right: 7%;
 
 }
 #logo model-viewer {
