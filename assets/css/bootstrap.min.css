@@ -9504,7 +9504,7 @@ vertical-align: middle;
 #logo model-viewer {
    height: 600px;
     width: 600px;
-    position: center;
+    position: absolute;
     top: 0;
     left: 0;
     margin-left: auto;
