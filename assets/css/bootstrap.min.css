@@ -9499,6 +9499,7 @@ vertical-align: middle;
     position: absolute;
    
     right: 7%;
+   padding-left: 800px;
 
 }
 #logo model-viewer {
@@ -9511,7 +9512,7 @@ vertical-align: middle;
   margin-right: auto;
   min-width: 100%;
     height: auto;
-  padding-left: 800px;
+ 
   
 }
 
