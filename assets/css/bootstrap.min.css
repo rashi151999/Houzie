@@ -9520,7 +9520,7 @@ vertical-align: middle;
   width: 500%;
 }
 .btn-btn-group button {
-  background-color: #04AA6D; /* Green background */
+  background-color: white; /* Green background */
   border: 1px solid green; /* Green border */
   color: white; /* White text */
   padding: 10px 24px; /* Some padding */
