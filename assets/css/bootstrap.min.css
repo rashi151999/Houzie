@@ -9519,6 +9519,25 @@ vertical-align: middle;
   height: 500%;
   width: 500%;
 }
+.btn-group button {
+  background-color: #04AA6D; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
 
 .b1 {background-color: #FFFFFF; border-radius: 4px; height:70px; width:70px;} /* Green */
 .b2 {background-color: ##FFFFFF; border-radius: 4px; height:70px; width:70px;} /* Blue */
