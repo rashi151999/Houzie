@@ -9519,16 +9519,14 @@ vertical-align: middle;
   height: 500%;
   width: 500%;
 }
-.btn-btn-primary button {
+.btn-btn-primary {
   background-color: white; 
 }
 
 /* Clear floats (clearfix hack) */
 
 
-.btn-group button:not(:last-child) {
-  border-right: none; /* Prevent double borders */
-}
+
 
 .b1 {background-color: #FFFFFF; border-radius: 4px; height:70px; width:70px;} /* Green */
 .b2 {background-color: ##FFFFFF; border-radius: 4px; height:70px; width:70px;} /* Blue */
