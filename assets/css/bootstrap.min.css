@@ -9519,7 +9519,7 @@ vertical-align: middle;
   height: 500%;
   width: 500%;
 }
-.btn-group button {
+.btn-btn-group button {
   background-color: #04AA6D; /* Green background */
   border: 1px solid green; /* Green border */
   color: white; /* White text */
@@ -9529,11 +9529,7 @@ vertical-align: middle;
 }
 
 /* Clear floats (clearfix hack) */
-.btn-group:after {
-  content: "";
-  clear: both;
-  display: table;
-}
+
 
 .btn-group button:not(:last-child) {
   border-right: none; /* Prevent double borders */
