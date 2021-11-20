@@ -131,3 +131,13 @@ footer {
   margin: auto;
   height: 50px;
 }
+div#one, div#two {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+}
+div#three, div#four {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+}
