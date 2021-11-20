@@ -38,7 +38,22 @@
   <button onclick="myFunction(5)" type="button" class="btn btn-primary" style="color:white"><img src="texturemus1.jpg" height ="50" width="50"/></button>
   </div></br>
 	    
-  <div class="container">
+  													 </div>
+     
+    <div id="card">
+     <model-viewer src="Models/m1.glb" camera-controls ar ar-modes="scene-viewer  quick-look" camera-orbit="414deg 57.76deg 18.53m" poster="poster.png" ios-src="tilemodel/tile.usdz">
+    
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
+</model-viewer>
+<div class="container">
       <div class="row align-items-center">
 	<div class="b" style="color:blue;">
     <div class="btn-group" role="group" aria-label="Basic example" float:left;>
@@ -56,22 +71,7 @@
     							
     </div>
      </div>
-															 </div>
-     
-    <div id="card">
-     <model-viewer src="Models/m1.glb" camera-controls ar ar-modes="scene-viewer  quick-look" camera-orbit="414deg 57.76deg 18.53m" poster="poster.png" ios-src="tilemodel/tile.usdz">
-    
-    <div class="progress-bar hide" slot="progress-bar">
-        <div class="update-bar"></div>
-    </div>
-    <button slot="ar-button" id="ar-button">
-        View in your space
-    </button>
-    <div id="ar-prompt">
-        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
-    </div>
-</model-viewer>
-
+		
 <style>
   #error {
     background-color: #ffffffdd;
