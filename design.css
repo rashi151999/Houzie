@@ -141,3 +141,35 @@ div#three, div#four {
   width: 200px;
   height: 50px;
 }
+.container1 {
+   background: #faa;
+   width: 100%;
+ }
+
+.container2 {
+  background: #ffc;
+  width: 50%;
+  margin-right: 50%;
+}
+.container3 {
+  background: #cfc;
+  width: 50%;
+  margin-left:50%;
+
+}
+.container4 {
+   background: #faa;
+   width: 100%;
+ }
+
+.container5 {
+  background: #ffc;
+  width: 50%;
+  margin-right: 50%;
+}
+.container6 {
+  background: #cfc;
+  width: 50%;
+  margin-left:50%;
+
+}
