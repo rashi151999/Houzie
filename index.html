@@ -12,20 +12,7 @@
     <script src="/utils.js"></script>
     </head>
   <body>
-     <div class="container">
-    <div class="row align-items-center">
-    <div class="b"style="color:blue;">
-  <div class="btn-group" role="group" id="one" aria-label="Basic example" float:left;>
-  <button onclick="myFunction(1)" type="button" class="btn btn-primary"><img src="Texture6.jpg" height ="60" width="60"/></button>
-  <button onclick="myFunction(2)" type="button" class="btn btn-primary"><img src="greenline.jpg" height ="60" width="60"/></button>
- 
-  </div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-	    
-  <div class="btn-group" role="group" id="two" aria-label="Basic example" float:right;>
-  <button onclick="myFunction(3) "type="button" class="btn btn-primary" style="color:white"><img src="texturemus1.jpg" height ="60" width="60"/></button>
-  <button onclick="myFunction(4)" type="button" class="btn btn-primary" style="color:white"><img src="texturemus1.jpg" height ="60" width="60"/></button>
-  <button onclick="myFunction(5)" type="button" class="btn btn-primary" style="color:white"><img src="texturemus1.jpg" height ="60" width="60"/></button>
-  </div></br>
+     
     <div id="card">
      <model-viewer src="flat/floorPlan.glb" camera-controls ar ar-modes="scene-viewer  quick-look" camera-orbit="414deg 57.76deg 18.53m" poster="poster.png" ios-src="tilemodel/tile.usdz">
     
@@ -39,21 +26,6 @@
         <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
     </div>
 </model-viewer>
-	    
-<div class="container">
-      <div class="row align-items-center">
-	<div class="b" style="color:blue;">
-    <div class="btn-group" role="group" id="three" aria-label="Basic example" float:left;>
-  <button onclick="myFunction(6) "type="button" class="btn btn-primary"><img src="texturegreen1.jpg" height ="60" width="60"/></button>
-  <button onclick="myFunction(7)" type="button" class="btn btn-primary"><img src="texturemus1.jpg" height ="60" width="60"/></button>
-  <button onclick="myFunction(8)" type="button" class="btn btn-primary"><img src="Texturenav1.jpg" height ="60" width="60"/></button>
-  </div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-   
-  <div class="btn-group" role="group" id="four" aria-label="Basic example" float:right;>
-  <button onclick="myFunction(9) "type="button" class="btn btn-primary"><img src="greenline.jpg" height ="60" width="60"/></button>
-  <button onclick="myFunction(10)" type="button" class="btn btn-primary"><img src="greenline.jpg" height ="60" width="60"/></button>
-  <button onclick="myFunction(11)" type="button" class="btn btn-primary"><img src="greenline.jpg" height ="60" width="60"/></button>
-  </div>
 
 <style>
   #error {
@@ -72,10 +44,25 @@
     transition: visibility 2s, opacity 1s 1s;
   }
 </style>
-
+</div>
+<!--<div id="control">
+  <button id="diffuse" value="https://cdn.glitch.com/2b6d7c24-4155-4cc0-a0e9-25c12a0b0a46%2Fstreet-basecolor.jpg?v=1620646837022">Street</button>
+  <button id="diffuse" value ="https://cdn.glitch.com/2b6d7c24-4155-4cc0-a0e9-25c12a0b0a46%2Fmidnight-basecolor.jpg?v=1620646837523">Midnight</button>
+  <button id="diffuse" value ="https://cdn.glitch.com/2b6d7c24-4155-4cc0-a0e9-25c12a0b0a46%2Fbeach-basecolor.jpg?v=1620646837133">Beach</button>
+  </div>-->
  </body>
 </html>
-
+<script>
+  document.querySelector("#model-viewer").addEventListener('ar-status', (event) => {
+    if(event.detail.status === 'failed'){
+      const error = document.querySelector("#error");
+      error.classList.remove('hide');
+      error.addEventListener('transitionend',(event) => {
+        error.classList.add('hide');
+      });
+    }
+  });
+</script>
 
 <style>
     model-viewer {
