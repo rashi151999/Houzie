@@ -141,35 +141,25 @@ div#three, div#four {
   width: 200px;
   height: 50px;
 }
-.container1 {
-   
-   width: 100%;
- }
-
-.container2 {
-  
-  width: 50%;
-  
+.float-Container {
+    border: 3px solid #fff;
+    padding: 20px;
 }
-.container3 {
-  
-  width: 50%;
- 
 
-}
 .container4 {
-   
-   width: 100%;
- }
-
-.container5 {
- 
-  width: 50%;
- 
+    width: 50%;
+    float: left;
+    padding: 20px;
+    border: 2px solid red;
+}  
+.float-container {
+    border: 3px solid #fff;
+    padding: 20px;
 }
-.container6 {
- 
-  width: 50%;
-  
 
-}
+.container1 {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    border: 2px solid red;
+}  
