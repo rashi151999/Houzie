@@ -141,17 +141,15 @@ div#three, div#four {
   width: 200px;
   height: 50px;
 }
-.previous {
-text-align: left;
+btn btn-default btn-lg {
+  margin-right:100px;
 }
-
-.next {
-text-align: right;
+btn btn-default btn-lg2{
+  margin-left:100px;
 }
-.previous1 {
-text-align: left;
+btn btn-default btn-lg3 {
+  margin-right:100px;
 }
-
-.next1 {
-text-align: right;
+btn btn-default btn-lg4 {
+  margin-left: 100px;
 }
