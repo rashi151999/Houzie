@@ -141,4 +141,10 @@ div#three, div#four {
   width: 200px;
   height: 50px;
 }
+.previous {
+text-align: left;
+}
 
+.next {
+text-align: right;
+}
