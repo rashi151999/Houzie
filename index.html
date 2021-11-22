@@ -6,25 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" href="design.css" />
+    <link rel="stylesheet" href="demo-styles.css" />
     <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
     <script src="https://unpkg.com/focus-visible/dist/focus-visible.js" defer></script>
     <script src="/utils.js"></script>
-	  
     </head>
   <body>
-    <div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">3D</span> PRODUCT VISUALIZATION.</h1>
-    <p>VIEW IN YOUR SPACE</p>
-   
-  </header>
-
-  <!-- About Section -->
-	<section class="sofa">
-		
- <div class="container">
+     <div class="container">
     <div class="row align-items-center">
     <div class="b"style="color:blue;">
   <div class="btn-group" role="group" id="one" aria-label="Basic example" float:left;>
@@ -38,11 +26,8 @@
   <button onclick="myFunction(4)" type="button" class="btn btn-primary" style="color:white"><img src="texturemus1.jpg" height ="60" width="60"/></button>
   <button onclick="myFunction(5)" type="button" class="btn btn-primary" style="color:white"><img src="texturemus1.jpg" height ="60" width="60"/></button>
   </div></br>
-	    
-  													 </div>
-     
     <div id="card">
-     <model-viewer src="Models/m1.glb" camera-controls ar ar-modes="scene-viewer  quick-look" camera-orbit="414deg 57.76deg 18.53m" poster="poster.png" ios-src="tilemodel/tile.usdz">
+     <model-viewer src="flat/floorPlan.glb" camera-controls ar ar-modes="scene-viewer  quick-look" camera-orbit="414deg 57.76deg 18.53m" poster="poster.png" ios-src="tilemodel/tile.usdz">
     
     <div class="progress-bar hide" slot="progress-bar">
         <div class="update-bar"></div>
@@ -53,7 +38,8 @@
     <div id="ar-prompt">
         <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
     </div>
-	    </model-viewer></div></br>
+</model-viewer>
+	    
 <div class="container">
       <div class="row align-items-center">
 	<div class="b" style="color:blue;">
@@ -67,221 +53,8 @@
   <button onclick="myFunction(9) "type="button" class="btn btn-primary"><img src="greenline.jpg" height ="60" width="60"/></button>
   <button onclick="myFunction(10)" type="button" class="btn btn-primary"><img src="greenline.jpg" height ="60" width="60"/></button>
   <button onclick="myFunction(11)" type="button" class="btn btn-primary"><img src="greenline.jpg" height ="60" width="60"/></button>
-  </div>														  
-    
-    							
-    </div>
-     </div>
-	</body>
-		<script>	
-				    
-       function myFunction(val) {
-	        var pT=1
-		var l=1
-		var b=1
-		var p=1
-		if(val==1){
-			pT = 1
-		} else if(val == 2){
-			pT = 2
-		} else if(val == 3){
-			l = 1
-		} else if(val == 4){
-			l = 2
-		} else if(val == 5){
-			l = 3
-		} else if(val == 6){
-			b = 1
-		} else if(val == 7){
-			b =2
-		} else if(val == 8){
-			b = 3
-		} else if(val == 9){
-			p = 1
-		} else if(val == 10){
-			p = 2
-		} else if(val == 11){
-			p = 3
-		}
-         
-        return onset(pT,l,b,p);
+  </div>
 
-
-		}
-
-		function onset(PT,L,B,P){
-                 var model = 1
-			if(P == 1){
-				if(PT == 1){
-					if(B == 1){
-						if(L == 1){
-							document.getElementById("model").src="Models/m1.glb";
-						} else if(L == 2){
-							document.getElementById("model").src="Models/m2.glb";
-						} else if(L == 3){
-							document.getElementById("model").src="Models/m3.glb";
-						}
-					} else if(B == 2){
-						if(L == 1){
-							document.getElementById("model").src="Models/m4.glb";
-						} else if(L == 2){
-							document.getElementById("model").src="Models/m5.glb";
-						} else if(L == 3){
-							document.getElementById("model").src="Models/m6.glb";
-						}
-					} else if(B == 3){
-						if(L == 1){
-							document.getElementById("model").src="Models/m7.glb";
-						} else if(L == 2){
-							document.getElementById("model").src="Models/m8.glb";
-						} else if(L == 3){
-							document.getElementById("model").src="Models/m9.glb";
-						}
-					}
-					} else if(PT == 2){
-					if(B == 1){
-						if(L == 1){
-							document.getElementById("model").src="Models/m10.glb";
-						} else if(L == 2){
-							document.getElementById("model").src="Models/m11.glb";
-						} else if(L == 3){
-							document.getElementById("model").src="Models/m12.glb";
-						}
-					} else if(B == 2){
-						if(L == 1){
-							document.getElementById("model").src="Models/m13.glb";
-						} else if(L == 2){
-							document.getElementById("model").src="Models/m14.glb";
-						} else if(L == 3){
-							document.getElementById("model").src="Models/m15.glb";
-						}
-					} else if(B == 3){
-						if(L == 1){
-							document.getElementById("model").src="Models/m16.glb";
-						} else if(L == 2){
-							document.getElementById("model").src="Models/m17.glb";
-						} else if(L == 3){
-							document.getElementById("model").src="Models/m18.glb";
-						}
-					} 
-				} 
-
-			} else if(P == 2){
-				if(PT == 1){
-					if(B == 1){
-						if(L == 1){
-							document.getElementById("model").src="Models/m19.glb";
-						} else if(L == 2){
-							document.getElementById("model").src="Models/m20.glb";
-						} else if(L == 3){
-							document.getElementById("model").src="Models/m21.glb";
-						}
-					} else if(B == 2){
-						if(L == 1){
-							document.getElementById("model").src="Models/m22.glb";
-						} else if(L == 2){
-							document.getElementById("model").src="Models/m23.glb";
-						} else if(L == 3){
-							document.getElementById("model").src="Models/m24.glb";
-						}
-					} else if(B == 3){
-						if(L == 1){
-							document.getElementById("model").src="Models/m25.glb";
-						} else if(L == 2){
-							document.getElementById("model").src="Models/m26.glb";
-						} else if(L == 3){
-							document.getElementById("model").src="Models/m27.glb";
-						}
-					}
-					} else if(PT == 2){
-					if(B == 1){
-						if(L == 1){
-							document.getElementById("model").src="Models/m28.glb";
-						} else if(L == 2){
-							document.getElementById("model").src="Models/m29.glb";
-						} else if(L == 3){
-							document.getElementById("model").src="Models/m30.glb";
-						}
-					} else if(B == 2){
-						if(L == 1){
-							document.getElementById("model").src="Models/m31.glb";
-						} else if(L == 2){
-							document.getElementById("model").src="Models/m32.glb";
-						} else if(L == 3){
-							document.getElementById("model").src="Models/m33.glb";
-						}
-					} else if(B == 3){
-						if(L == 1){
-							document.getElementById("model").src="Models/m34.glb";
-						} else if(L == 2){
-							document.getElementById("model").src="Models/m35.glb";
-						} else if(L == 3){
-							document.getElementById("model").src="Models/m36.glb";
-						}
-					} 
-				} 
-
-
-			} else if(P == 3){
-               if(PT == 1){
-					if(B == 1){
-						if(L == 1){
-							document.getElementById("model").src="Models/m37.glb";
-						} else if(L == 2){
-							document.getElementById("model").src="Models/m38.glb";
-						} else if(L == 3){
-							document.getElementById("model").src="Models/m39.glb";
-						}
-					} else if(B == 2){
-						if(L == 1){
-							document.getElementById("model").src="Models/m40.glb";
-						} else if(L == 2){
-							document.getElementById("model").src="Models/m41.glb";
-						} else if(L == 3){
-							document.getElementById("model").src="Models/m42.glb";
-						}
-					} else if(B == 3){
-						if(L == 1){
-							document.getElementById("model").src="Models/m43.glb";
-						} else if(L == 2){
-							document.getElementById("model").src="Models/m44.glb";
-						} else if(L == 3){
-							document.getElementById("model").src="Models/m45.glb";
-						}
-					} else if(PT == 2){
-					if(B == 1){
-						if(L == 1){
-							document.getElementById("model").src="Models/m46.glb";
-						} else if(L == 2){
-							document.getElementById("model").src="Models/m47.glb";
-						} else if(L == 3){
-							document.getElementById("model").src="Models/m48.glb";
-						}
-					} else if(B == 2){
-						if(L == 1){
-							document.getElementById("model").src="Models/m49.glb";
-						} else if(L == 2){
-							document.getElementById("model").src="Models/m50.glb";
-						} else if(L == 3){
-							document.getElementById("model").src="Models/m51.glb";
-						}
-					} else if(B == 3){
-						if(L == 1){
-							document.getElementById("model").src="Models/m52.glb";
-						} else if(L == 2){
-							document.getElementById("model").src="Models/m53.glb";
-						} else if(L == 3){
-							document.getElementById("model").src="Models/m54.glb";
-						}
-					} 
-				} 
-
-			}
-			
-		}
-	 	
-}
-</script>
 <style>
   #error {
     background-color: #ffffffdd;
@@ -300,6 +73,8 @@
   }
 </style>
 
+ </body>
+</html>
 
 
 <style>
@@ -397,4 +172,3 @@
         font-size: 16px;
     }
 </style>
-
